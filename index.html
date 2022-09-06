@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+	<!---------------------------------------------------->	
+	<header>
+		<!--Use Flexbox to create the navigation bar-->
+		<div class="flexbox-container">
+			<div class="box-1">
+				<img src="MEDIA/global.png" alt="Logo"/>		
+			</div>	
+				
+			<div class="box-2">
+				<p class="tagline">ITWD6.408 </p>
+			</div>
+			
+			<div class="box-3">
+				<div id="horizontal-nav">
+					<ul>
+						<li class="active"><a href="index.html">HOME</a></li>
+						<li><a href="fomrs.html">FORMS</a></li>
+						<li><a href="xml-jsaon.html">XML/JSON</a></li>
+						<li><a href="js-demo1.html">JAVASCRIPT</a></li>
+						<li><a href="my-research.html">RESEARCH</a></li>	
+					</ul>
+				</div>			
+			</div>			
+			<div class="box-4">
+				<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+				
+			</div>				
+		</div>	
+
+		<!--Curtain menu: collapse this menu as default when loading the page-->
+		<nav id="curtain-nav" class="overlay">
+			<!--Add a close button (X) hyperlink on the top left corner-->
+			<a href="javascript:void(0)" class="nav-close-button" onclick="closeNav()">❌</a>
+			<div class="overlay-content">
+				<ul>
+					<li class="active"><a href="index.html">HOME</a></li>
+					<li><a href="fomrs.html">FORMS</a></li>
+					<li><a href="xml-jsaon.html">XML/JSON</a></li>
+					<li><a href="js-demo.html">JAVASCRIPT</a></li>
+					<li><a href="my-research.html">RESEARCH</a></li>	
+				</ul>
+			</div>
+		</nav>
+	</header>
+	
+	<!---------------------------------------------------->	
+	<!--Main content section-->
+	<main>
+			
+		<section class="showcase"> 
+			<div class="showcase-bg-image"></div>
+			<div class="bg-text">
+				<p>Advanced Inernet and Web Learning Port</p>
+				
+				<h1>Brenda Anstis-Jury</h1>
+				
+				<p> And I'm a student</p>
+			</div>
+		</section>
+		
+		<section class="bio">
+		<h1>Bio</h1>
+		<img src="C:\Users\brend\Desktop\Lab\Assignment\MEDIA\AvatarMaker.png" alt="Avatar" class="avatar">
+		<p>I am a student at EIT who enjoys robotics and machine learning. 
+		I am a quiet and introverted person, but I enjoy coding, gaming, anime and comics on my free time. 
+		My interests include video games, robotics, and machine learning. </p>
+		</section>
+		
+		<section class="webtechno"> <h2>Top 5 Web technogies<h2>
+			<ul class="no-bullets">
+				Note pad++
+				Github
+				Google drive
+				Jupyter notebook
+				Opera GX
+			</ul>
+		</section>	
+		
+		<section class="competence"> <h2>Competence section</h2>
+		<div class="flip-box">
+			<div class="flip-box-inner">
+				<div class="flip-box-front">
+					<h2>Hypertext Mark-up Language</h2>
+					<img src="C:\Users\brend\Desktop\Lab\Assignment\MEDIA\html5.png" alt="CSS" width="50%">
+				</div>
+					<div class="flip-box-back">
+						<h2>HTML is used to create websites and much more.</h2>
+					</div>
+			</div>
+		</div>
+		<div class="flip-box">
+			<div class="flip-box-inner">
+				<div class="flip-box-front">
+					<h2>Cascarding Style Sheet</h2>
+					<img src="C:\Users\brend\Desktop\Lab\Assignment\MEDIA\css3.png" alt="CSS" width="50%">
+				</div>
+					<div class="flip-box-back">
+						<h2>CSS is used to style websites in a seperate file to keep the main webpage neat and tidy.</h2>
+					</div>
+			</div>
+		</div>
+		<div class="flip-box">
+			<div class="flip-box-inner">
+				<div class="flip-box-front">
+					<h2>Cascarding Style Sheet</h2>
+					<img src="C:\Users\brend\Desktop\Lab\Assignment\MEDIA\javascript.png" alt="CSS" width="50%">
+				</div>
+					<div class="flip-box-back">
+						<h2>Javascript is used to style websites in a seperate file to keep the main webpage neat and tidy. </h2>
+					</div>
+			</div>
+		</div>
+		</section>
+		
+		<section class="statement"> 
+		<h1>Statement</h1>
+		<p>“I confirm that:
+			This is an original assessment and is entirely my own work.
+			It contains no material previously published or written by another person or myself except where due acknowledgement is made in the text. 
+			No material which to a substantial extent, has been submitted for any other academic course, is included without acknowledgement.”</p>
+		</section>		
+			
+	</main>
+	
+	<!---------------------------------------------------->	
+	<!--Footer section-->
+	<footer>
+		<div> @Created by: Brenda <br />
+			Contact me at: <a href="mailto:brenda1anstisjuryxx@gmail.com">brenda1anstisjuryxx@gmail.com</a>
+		</div>
+	</footer>
+	
+	<!--Embed the js file at the bottom of the html file-->
+	<script type="text/javascript" src="JS/javascript.js">
+	</script>
+
+</body>
+</html>
+

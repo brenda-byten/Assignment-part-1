@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS </title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+<header>
+		<!--Use Flexbox to create the navigation bar-->
+		<div class="flexbox-container">
+			<div class="box-1">
+				<img src="C:\Users\brend\Desktop\Lab\Assignment\MEDIA\global.png" alt="Logo"/>		
+			</div>	
+				
+			<div class="box-2">
+				<p class="tagline">ITWD6.408 </p>
+			</div>
+			
+			<div class="box-3">
+				<div class="horizontal-nav">
+					<ul>
+						<li class="active"><a href="js-demo1.html">JAVASCRIPT</a></li>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="fomrs.html">FORMS</a></li>
+						<li><a href="xml-jsaon.html">XML/JSON</a></li>
+						<li><a href="my-research.html">RESEARCH</a></li>		
+					</ul>
+				</div>			
+			</div>			
+			<div class="box-4">
+				<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+			</div>				
+		</div>	
+
+		<!--Curtain menu: collapse this menu as default when loading the page-->
+		<nav id="curtain-nav" class="overlay">
+			<!--Add a close button (X) hyperlink on the top left corner-->
+			<a href="javascript:void(0)" class="nav-close-button" onclick="closeNav()">❌</a>
+			<div class="curtain-nav-content">
+				<ul>
+					<li class="active"><a href="js-demo1.html">JAVASCRIPT</a></li>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="fomrs.html">FORMS</a></li>
+					<li><a href="xml-jsaon.html">XML/JSON</a></li>
+					<li><a href="my-research.html">RESEARCH</a></li>	
+				</ul>
+			</div>
+		</nav>
+	
+	<h2 class="w3-center">Manual Slideshow</h2>
+
+		<div class="w3-content w3-display-container">
+		  <img class="mySlides" src="MEDIA/movie0.jpg" style="width:25%">
+		  <img class="mySlides" src="MEDIA/movie1.jpg" style="width:25%">
+		  <img class="mySlides" src="MEDIA/movie2.jpg" style="width:25%">
+		  <img class="mySlides" src="MEDIA/movie3.jpg" style="width:25%">
+		  <img class="mySlides" src="MEDIA/movie4.jpg" style="width:25%">
+
+		  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+		</div>
+		
+
+		<br>
+	
+	<section id="container" class="bio">
+	<h2 class="w3-center">Auto Slideshow</h2>
+	<div class="slider" id="main-slider">
+		
+	  <!-- outermost container element -->
+	  <div class="slider-wrapper">
+		<!-- innermost wrapper element -->
+		<img src="MEDIA/movie0.jpg" alt="First" class="slide"  style="width:150%"/><!-- slides -->
+		<img src="MEDIA/movie1.jpg" alt="Second" class="slide" style="width:150%" />
+		<img src="MEDIA/movie2.jpg" alt="Third" class="slide" style="width:150%" />
+		<img src="MEDIA/movie3.jpg" alt="Fourth" class="slide" style="width:150%" />
+		<img src="MEDIA/movie4.jpg" alt="Fifth" class="slide" style="width:150%"/>
+	  </div>
+	</div>
+
+	</section>
+	
+<br>
+<br>
+
+<div class="container">
+			<label>Keyword:</label>
+			<input type="text" id="searchInput">
+			<input type="button" value="search" onclick="displayFilteredMovies()">
+			<br>
+		</div>
+		
+		<div class="container">
+			<div class="row" id="movie-list"></div>
+		</div>
+		<div class="container">
+			<h5>Shopping Cart:</h5>
+			<div class="bg-success p-2 m-2" id="shopping-cart"></div>
+			
+			
+		</div>
+
+
+
+
+
+
+
+
+		
+	<!--Embed JS here-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>	
+	<script type="text/javascript" src="JS/js-1.js">
+	</script>
+	
+</body>
+
+</html>
